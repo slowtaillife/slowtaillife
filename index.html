@@ -169,7 +169,7 @@ footer{text-align:center;margin-top:40px;padding-top:22px;border-top:1px dashed 
 <div style="background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:16px 18px;margin-bottom:26px;">
   <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px;">
     <div style="font-family:'Noto Serif TC',serif;font-size:14px;font-weight:600;">📖 讀書計劃進度</div>
-    <div style="font-size:12px;color:var(--soft);"><strong id="booksCompleted" style="color:var(--sage);">0</strong> / 9 本完成</div>
+    <div style="font-size:12px;color:var(--soft);"><strong id="booksCompleted" style="color:var(--sage);">0</strong> / 10 本完成</div>
   </div>
   <!-- 四階段進度 -->
   <div id="bookStageProgress"></div>
@@ -234,6 +234,7 @@ footer{text-align:center;margin-top:40px;padding-top:22px;border-top:1px dashed 
 <option value="07｜非暴力溝通" data-stage="第三階段">07｜非暴力溝通</option>
 <option value="08｜行為調整訓練BAT 2.0" data-stage="第四階段">08｜行為調整訓練BAT 2.0</option>
 <option value="09｜How to Run a Dog Business" data-stage="第四階段">09｜How to Run a Dog Business</option>
+<option value="10｜狗狗長壽聖經" data-stage="其他">10｜狗狗長壽聖經</option>
 <option value="其他書籍（自由輸入）" data-stage="其他">其他書籍（自由輸入）</option>
       </select>
     </div>
@@ -294,7 +295,7 @@ const POSES=["UklGRhhIAABXRUJQVlA4WAoAAAAQAAAAZwEA3wEAQUxQSBEhAAAB8Mf//ywl/f89Zm
 const TL={sitter:'保母實作',reading:'訓練理論讀書',class:'上課',media:'自媒體',volunteer:'收容所志工'};
 const TC={sitter:'sage',reading:'terra',class:'gold',media:'plum',volunteer:'blue'};
 
-const BOOK_STAGES = {"01｜別跟狗爭老大": "第一階段", "02｜狗狗在想什麼？": "第一階段", "03｜別斃了那隻狗！": "第二階段", "04｜品種犬行為學": "第二階段", "05｜當身體說不的時候": "第二階段", "06｜動機式訪談法": "第三階段", "07｜非暴力溝通": "第三階段", "08｜行為調整訓練BAT 2.0": "第四階段", "09｜How to Run a Dog Business": "第四階段", "其他書籍（自由輸入）": "其他"};
+const BOOK_STAGES = {"01｜別跟狗爭老大": "第一階段", "02｜狗狗在想什麼？": "第一階段", "03｜別斃了那隻狗！": "第二階段", "04｜品種犬行為學": "第二階段", "05｜當身體說不的時候": "第二階段", "06｜動機式訪談法": "第三階段", "07｜非暴力溝通": "第三階段", "08｜行為調整訓練BAT 2.0": "第四階段", "09｜How to Run a Dog Business": "第四階段", "10｜狗狗長壽聖經": "其他", "10｜狗狗長壽聖經": "其他", "其他書籍（自由輸入）": "其他"};
 let entries=[], track='sitter', is200=false, sType='到府照顧', cType='一對一訓練課', vType='遛狗', openM={}, editId=null;
 
 function toast(msg){
